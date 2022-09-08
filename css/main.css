@@ -12,19 +12,16 @@ a {
     display: inline;
     color: black;
 }
-/* (text-decoration: none) = quita los estilos de la fuente
-(display: inline) = ordenas las etiquetas en forma horizontal una al lado de otra en linea */
+
 header {
     width: 100%;
     height: 140px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-/* (display: grid) = divide el contenedor en cuadriculas
-(grid-template-rows: 1fr 1fr) = divide el contenedor en un modelo de  fila en este caso en 2*/
 header .header-icons-container {
     width: 100%;
-    height: 140px;
+    height: 50px;
     display: grid;
     background-color: orange;
 }
@@ -49,7 +46,7 @@ nav {
 nav .nav-logo-container {
     margin-left: 50px;
 }
-nav .nav-logo-container{
+nav .nav-logo-container img{
     width: 220px;
     margin-top: 10px;
 }
@@ -59,6 +56,39 @@ nav .profile-link {
     justify-content: flex-end;
     margin-right: 50px;
 }
-nav .profile-link{
+nav .profile-link a{
     color: black;
+    border-bottom: 5px black;
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('/Platzi/BlogPersonal/assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+
+}
+.home-main-text {
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: black;
+    text-align: center;
+}
+.home-main-text {
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: black;
+    text-align: center;
 }
